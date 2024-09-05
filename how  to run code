@@ -1,0 +1,3 @@
+Install Python: Ensure you have Python installed on your computer. You can download it from python.org.
+Install Turtle Graphics: Turtle graphics is included with Python, so no additional installation is needed.
+Run the Code: Copy the code into a Python file (e.g., birthday_message.py) and run it using a Python IDE or from the command line with python birthday_message.py.
