@@ -1,0 +1,44 @@
+# Python program to create a HEART Display 
+# Anchal Sahu  heart 
+import turtle
+import time
+
+# Set up the screen
+screen = turtle.Screen()
+screen.title("Happy Birthday Anchal Sahu")
+screen.bgcolor("white")
+
+# Create a turtle to draw the heart shape
+heart_turtle = turtle.Turtle()
+heart_turtle.color("red")
+heart_turtle.speed(2)
+
+# Function to draw a heart shape
+def draw_heart():
+    heart_turtle.begin_fill()
+    heart_turtle.left(140)
+    heart_turtle.forward(180)
+    heart_turtle.circle(-90, 200)
+    heart_turtle.left(120)
+    heart_turtle.circle(-90, 200)
+    heart_turtle.forward(180)
+    heart_turtle.end_fill()
+
+# Function to display the message
+def display_message():
+    message_turtle = turtle.Turtle()
+    message_turtle.hideturtle()
+    message_turtle.color("red")
+    message_turtle.penup()
+    message_turtle.goto(0, -50)
+    message_turtle.write("Happy Birthday Anchal Sahu", align="center", font=("Arial", 24, "bold"))
+
+# Draw the heart shape and display the message continuously
+while True:
+    heart_turtle.clear()
+    draw_heart()
+    display_message()
+    time.sleep(2)
+
+# Keep the window open
+turtle.done()
